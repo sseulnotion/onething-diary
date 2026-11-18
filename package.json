@@ -1,6 +1,6 @@
 {
   "name": "onething-diary",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "원씽 OS 전용 다이어리 아티팩트 파일 (구매 코드로 잠김)",
   "files": ["app.js", "font.js"],
   "license": "UNLICENSED"
