@@ -18,3 +18,7 @@ jobs:
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: jsDelivr 캐시 비우기 (@1 주소가 새 버전을 바로 주게)
+        run: |
+          sleep 20
+          for f in app.js font.js; do curl -fsS "https://purge.jsdelivr.net/npm/onething-diary@1/$f" || true; echo; done
